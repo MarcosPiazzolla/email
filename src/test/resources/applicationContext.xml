@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+      http://www.springframework.org/schema/beans/spring-beans.xsd">
+      
+  <bean id="global" class="br.com.piazzolla.mail.Global">
+    <constructor-arg name="emailUsuario" value="seu.email@gmail.com" />
+    <constructor-arg name="senhaUsuario" value="suasenha" />
+    <constructor-arg name="servidor" value="smtp.googlemail.com" />
+    <constructor-arg name="porta" value="465" />
+    <constructor-arg name="arquivoAnexo" value="/home/marcos/Documents/projetos/email/src/test/resources/backup.rar" />  
+  </bean>
+      
+</beans>
